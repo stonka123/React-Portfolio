@@ -20,7 +20,6 @@ html {
 	font-size: 62.5%;
 	color: var(--white-fonts);
 	font-style: normal;
-	width: 100vw;
 }
 .wrapper {
 	margin: 0 auto;

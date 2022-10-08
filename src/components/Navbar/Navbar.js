@@ -3,6 +3,7 @@ import { Twirl as Hamburger } from 'hamburger-react'
 import styles from './Navbar.module.css'
 import logoImg from '../../assets/img/rocket-gif.gif'
 import Menu from './Menu/Menu'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 function Navbar(props) {
 	const [isOpen, setIsOpen] = useState(false)
@@ -24,6 +25,14 @@ function Navbar(props) {
 						<a href=''>Projects</a>
 						<a href=''>Contact</a>
 					</div>
+				</div>
+				<div className={styles['container-social']}>
+					<a className={styles['social-box']}>
+						<FaGithub className={styles['social-icon']} />
+					</a>
+					<a className={styles['social-box']}>
+						<FaLinkedinIn className={styles['social-icon']} />
+					</a>
 				</div>
 			</div>
 			<Menu showMenu={isOpen} closeMenu={setIsOpen} />

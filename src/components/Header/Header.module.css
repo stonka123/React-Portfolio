@@ -39,7 +39,7 @@
 	max-width: 1200px;
 }
 .container-text {
-	width: 100%;
+	width: 90%;
 	padding: 0.5em;
 	margin: 0.5em;
 }
@@ -72,10 +72,10 @@
 	font-size: 1.9em;
 }
 .container-text p {
-	width: 100%;
+	width: 90%;
 	font-size: 1.4rem;
 	padding: 0.3em;
-	color: var(--gray-fonts);
+	color: var(--dark-fonts);
 }
 
 .button-contact {
@@ -213,13 +213,13 @@
 		font-size: 2.2rem;
 	}
 	.container-text h1 {
-		font-size: 5rem;
+		font-size: 3rem;
 	}
 	.container-text h3 {
-		font-size: 3.5em;
+		font-size: 2em;
 	}
 	.container-text p {
-		font-size: 2.7rem;
+		font-size: 1.6rem;
 		width: 70%;
 	}
 	.container-img {
