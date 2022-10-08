@@ -1,6 +1,12 @@
 .header {
 	position: relative;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
+
 .background {
 	position: absolute;
 	top: 0;
@@ -11,35 +17,43 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100vw;
-	height: 100vh;
-	filter: brightness(0.4);
+	width: 100%;
+	height: 100%;
+	filter: brightness(0.25);
 	z-index: -1;
 }
-.container {
+.bgcImage {
+	opacity: 0.6;
+	position: absolute;
+	top: 20%;
+	left: 60%;
+	width: 400px;
+}
+.container-header {
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: column;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	max-width: 1200px;
 }
 .container-text {
-	width: 70%;
-	padding: 1em;
-	margin: 1em;
+	width: 100%;
+	padding: 0.5em;
+	margin: 0.5em;
 }
 .button-portfolio {
 	background: rgb(99, 41, 86);
 	background: linear-gradient(90deg, rgba(99, 41, 86, 1) 0%, rgba(55, 35, 108, 1) 100%);
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: var(--white-fonts);
 	border: 1px solid var(--gray-fonts);
-	padding: 0.8em 0.4em;
+	padding: 0.4em 0.2em;
+	margin: 0.2em;
 	cursor: pointer;
 	transition: background 2s linear;
 }
@@ -48,16 +62,19 @@
 	background: linear-gradient(270deg, rgba(99, 41, 86, 1) 0%, rgba(55, 35, 108, 1) 100%);
 }
 .container-text h1 {
-	margin-top: 1em;
-	font-size: 1.4rem;
+	padding: 0.3em;
+	font-size: 2.2rem;
 }
 
-.container-text h2 {
+.container-text h3 {
 	margin-top: 0;
-	font-size: 1.2rem;
+	padding: 0.3em;
+	font-size: 1.9em;
 }
 .container-text p {
-	font-size: 1rem;
+	width: 100%;
+	font-size: 1.4rem;
+	padding: 0.3em;
 	color: var(--gray-fonts);
 }
 
@@ -72,6 +89,7 @@
 	margin: 1em;
 	padding: 1em;
 	align-self: flex-end;
+	margin-bottom: 0em;
 }
 
 .button-contact-mobile {
@@ -90,7 +108,6 @@
 }
 .button-contact-mobile p {
 	text-align: center;
-
 	padding: 0;
 	margin: 0;
 }
@@ -100,42 +117,127 @@
 	padding: 0.3em;
 }
 .img-me {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	border: 2px solid var(--gray-fonts);
 }
 .icon-down {
-	display: inline-block;
-	position: absolute;
-	padding: 0.2em;
-	margin-bottom: 1em;
-	width: 20px;
-	height: 20px;
-	border: 0.5px solid var(--gray-fonts);
-	border-radius: 50%;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	cursor: pointer;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.5em;
+	height: 40px;
+	width: 40px;
 	transition: opacity 0.3s linear;
 }
-.icon-down::before {
-	background-color: #3f3f3f;
-	opacity: 0.3;
-	top: 0;
-	left: 0;
-	border-radius: 50%;
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
+
 .icon-down-icon {
+	text-align: center;
 	width: 100%;
 	height: 100%;
+
 	color: var(--gray-fonts);
 }
-.icon-down:hover .icon-down-icon {
+.icon-down-icon:hover {
 	color: var(--white-fonts);
+}
+
+@media (min-width: 576px) {
+	.container-text {
+		padding: 1.5em;
+	}
+	.button-portfolio {
+		font-size: 1.8rem;
+	}
+	.container-text h1 {
+		font-size: 2.7rem;
+	}
+	.container-text h3 {
+		font-size: 2.2rem;
+	}
+	.container-text p {
+		font-size: 1.8rem;
+	}
+	.container-img {
+		margin-right: 2em;
+	}
+	.button-contact-mobile {
+		font-size: 1.5rem;
+	}
+	.icon-msg {
+		width: 30px;
+		height: 30px;
+	}
+	.icon-down {
+		width: 45px;
+		height: 45px;
+	}
+}
+@media (min-width: 768px) {
+	.container-text {
+		padding: 2em;
+	}
+	.button-portfolio {
+		font-size: 2.2rem;
+	}
+	.container-text h1 {
+		font-size: 3.5rem;
+	}
+	.container-text h3 {
+		font-size: 3rem;
+	}
+	.container-text p {
+		font-size: 2.2rem;
+	}
+	.container-img {
+		margin-right: 2em;
+	}
+	.button-contact-mobile {
+		font-size: 2.4rem;
+	}
+	.icon-msg {
+		width: 45px;
+		height: 45px;
+	}
+	.img-me {
+		width: 120px;
+		height: 120px;
+	}
+	.icon-down {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media (min-width: 992px) {
+	.button-portfolio {
+		font-size: 2.2rem;
+	}
+	.container-text h1 {
+		font-size: 5rem;
+	}
+	.container-text h3 {
+		font-size: 3.5em;
+	}
+	.container-text p {
+		font-size: 2.7rem;
+		width: 70%;
+	}
+	.container-img {
+		margin-right: 2em;
+	}
+	.button-contact-mobile {
+		font-size: 2.6rem;
+	}
+	.icon-msg {
+		width: 50px;
+		height: 50px;
+	}
+	.img-me {
+		width: 160px;
+		height: 160px;
+	}
+	.icon-down {
+		width: 42px;
+		height: 42px;
+	}
 }

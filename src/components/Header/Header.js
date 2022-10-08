@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../assets/variable-css/colors.css'
 import imageMe from '../../assets/img/test2.jpg'
 import styles from './Header.module.css'
-import { FiArrowRightCircle, FiArrowDown } from 'react-icons/fi'
+import Navbar from '../Navbar/Navbar'
+
+import { FiArrowRightCircle, FiChevronDown } from 'react-icons/fi'
 
 const Header = () => {
 	return (
 		<section className={styles.header} id='home'>
-			<div className={styles.container}>
-				<div className={styles['container-text']}>
+			<div className={styles.background}></div>
+			<div className={`${styles['container-header']} wrapper`}>
+				<Navbar />
+				<div className={`${styles['container-text']}`}>
 					<button className={styles['button-portfolio']} href='#projects'>
 						Check my Projects
 					</button>
@@ -19,7 +23,6 @@ const Header = () => {
 						tempora molestiae quas quis nihil, illo iusto voluptatum recusandae. Inventore accusamus cupiditate debitis
 						veniam.
 					</p>
-					<a className={styles['button-contact']}>Contact me</a>
 				</div>
 				<div className={styles['container-img']}>
 					<a className={styles['button-contact-mobile']}>
@@ -27,12 +30,10 @@ const Header = () => {
 					</a>
 					<img src={imageMe} alt='' className={styles['img-me']} />
 				</div>
+				<a href='#skills' className={styles['icon-down']}>
+					<FiChevronDown className={styles['icon-down-icon']} />
+				</a>
 			</div>
-			<div className={styles.background}></div>
-
-			<a href='#skills' className={styles['icon-down']}>
-				<FiArrowDown className={styles['icon-down-icon']} />
-			</a>
 		</section>
 	)
 }

@@ -1,11 +1,7 @@
-body {
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-.wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
 }
 
 /* FONTS */
@@ -24,4 +20,10 @@ html {
 	font-size: 62.5%;
 	color: var(--white-fonts);
 	font-style: normal;
+	width: 100vw;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }

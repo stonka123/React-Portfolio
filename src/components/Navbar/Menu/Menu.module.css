@@ -1,0 +1,72 @@
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../../assets/img/bgc_menu.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 3;
+	transform: translateX(100%);
+	transition: transform 0.4s;
+}
+.showMenu {
+	transform: translateX(0);
+}
+.gif {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 40px;
+}
+.menu-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+.menu-container a {
+	text-decoration: none;
+	color: var(--white-fonts);
+	font-size: 1.5rem;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+.social-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 2em;
+}
+.social-icon-radius {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 1em;
+	border: 0.5px solid var(--gray-fonts);
+	border-radius: 50%;
+
+	text-align: center;
+	background-color: #262626;
+}
+
+.social-icon {
+	position: relative;
+	display: inline-block;
+	color: var(--gray-fonts);
+	width: 20px;
+	height: 20px;
+	padding: 0.2em;
+	margin: 1em;
+}
