@@ -28,7 +28,7 @@ const Skills = () => {
 			<svg width='0' height='0'>
 				<linearGradient id='blue-gradient' x1='50%' y1='100%' x2='50%' y2='0%'>
 					<stop stopColor='#7a6ded' offset='0%' />
-					<stop stopColor='#591885' offset='100%' />
+					<stop stopColor='#0091ff' offset='100%' />
 				</linearGradient>
 			</svg>
 			<div className={styles['skill-box']}>

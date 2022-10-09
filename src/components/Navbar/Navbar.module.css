@@ -33,13 +33,14 @@
 }
 .logo-text {
 	padding: 0;
-	color: var(--gray-fonts);
+	color: var(--add-color);
+	/* opacity: 0.5; */
 }
 
 .logo {
 	width: 30px;
 	opacity: 0.7;
-	rotate: 45deg;
+	/* rotate: 45deg; */
 }
 
 .navigation-desktop {
@@ -56,7 +57,7 @@
 .scrolledNavBar {
 	transition: all 0.3s;
 	background-color: black;
-	border-bottom: 1px solid rgba(128, 0, 128, 0.4);
+	border-bottom: 1px solid rgba(0, 145, 255, 0.4);
 }
 @media (min-width: 576px) {
 }
@@ -69,6 +70,7 @@
 	.navigation-desktop {
 		display: flex;
 		z-index: 8;
+		position: relative;
 	}
 	.deskopWrapperContainer {
 		position: fixed;
@@ -96,7 +98,7 @@
 	.scrolledNavBarDesktop {
 		transition: all 0.3s;
 		background-color: black;
-		border-bottom: 1px solid rgba(128, 0, 128, 0.4);
+		border-bottom: 1px solid rgba(0, 145, 255, 0.4);
 	}
 	.logo-text-desktop {
 		font-size: 2rem;
@@ -123,10 +125,16 @@
 		margin: 0;
 	}
 	.container-social {
-		display: block;
 		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 		right: 0;
 		top: 10vh;
+		margin-top: 1em;
+		margin-right: 1em;
+		max-width: 1200px;
 	}
 	.social-box {
 		display: flex;

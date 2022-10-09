@@ -13,9 +13,9 @@ const Header = () => {
 			<div className={`${styles['container-header']} wrapper`}>
 				<Navbar />
 				<div className={`${styles['container-text']}`}>
-					<button className={styles['button-portfolio']} href='#projects'>
+					<a className={styles['button-portfolio']} href='#projects'>
 						Check my Projects
-					</button>
+					</a>
 					<h1>Hi! I'm Tomasz Twarowski</h1>
 					<h3>Frontend Developer</h3>
 					<p>

@@ -71,7 +71,7 @@
 .social-icon {
 	position: relative;
 	display: inline-block;
-	color: var(--gray-fonts);
+	color: var(--add-color);
 	width: 20px;
 	height: 20px;
 	padding: 0.2em;

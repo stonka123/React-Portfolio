@@ -38,40 +38,42 @@
 	max-width: 1200px;
 }
 .container-text {
+	display: flex;
+	flex-direction: column;
 	width: 90%;
 	padding: 0.5em;
 	margin: 0.5em;
 }
 .button-portfolio {
+	text-align: center;
 	background: rgb(99, 41, 86);
 	background: linear-gradient(90deg, rgba(99, 41, 86, 1) 0%, rgba(55, 35, 108, 1) 100%);
 	text-decoration: none;
+	width: 150px;
 	font-size: 1rem;
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--white-fonts);
 	border: 1px solid var(--gray-fonts);
-	padding: 0.8em 0.3em;
-	margin: 0.3em;
-	margin-bottom: 1em;
+	padding: 1em;
 	cursor: pointer;
-	transition: all 0.9s linear;
+	transition: all 0.3s linear;
+	margin-bottom: 0.2em;
 }
 .button-portfolio:hover {
-	background: rgb(99, 41, 86);
-	background: linear-gradient(270deg, rgba(99, 41, 86, 1) 0%, rgba(55, 35, 108, 1) 100%);
+	background: var(--add-color);
 }
 .container-text h1 {
 	padding: 0.3em;
 	font-size: 2rem;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.2em;
 }
 
 .container-text h3 {
 	margin-top: 0;
 	padding: 0.3em;
 	font-size: 1.8em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.2em;
 }
 .container-text p {
 	width: 90%;
@@ -88,7 +90,6 @@
 	margin: 1em;
 	padding: 1em;
 	align-self: flex-end;
-	margin-bottom: 0em;
 }
 
 .button-contact-mobile {
@@ -119,7 +120,7 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	border: 2px solid var(--gray-fonts);
+	border: 2px solid var(--add-color);
 }
 .icon-down {
 	text-align: center;
@@ -134,8 +135,8 @@
 	text-align: center;
 	width: 100%;
 	height: 100%;
-
-	color: var(--gray-fonts);
+	transition: color 0.3s;
+	color: var(--add-color);
 }
 .icon-down-icon:hover {
 	color: var(--white-fonts);
@@ -146,16 +147,17 @@
 		padding: 1.5em;
 	}
 	.button-portfolio {
-		font-size: 1.8rem;
+		width: 200px;
+		font-size: 1.3rem;
 	}
 	.container-text h1 {
-		font-size: 2.7rem;
+		font-size: 2.3rem;
 	}
 	.container-text h3 {
-		font-size: 2.2rem;
+		font-size: 2.1rem;
 	}
 	.container-text p {
-		font-size: 1.8rem;
+		font-size: 1.3rem;
 	}
 	.container-img {
 		margin-right: 2em;
@@ -177,26 +179,61 @@
 		padding: 2em;
 	}
 	.button-portfolio {
-		font-size: 2.2rem;
+		font-size: 1.5rem;
+		width: 230px;
 	}
 	.container-text h1 {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 	}
 	.container-text h3 {
-		font-size: 3rem;
+		font-size: 2.3rem;
 	}
 	.container-text p {
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 	}
 	.container-img {
-		margin-right: 2em;
+		margin-right: 1.7em;
 	}
 	.button-contact-mobile {
-		font-size: 2.4rem;
+		font-size: 2rem;
 	}
 	.icon-msg {
 		width: 45px;
 		height: 45px;
+	}
+	.img-me {
+		width: 100px;
+		height: 100px;
+	}
+	.icon-down {
+		width: 48px;
+		height: 48px;
+	}
+}
+@media (min-width: 992px) {
+	.button-portfolio {
+		font-size: 1.8rem;
+		width: 300px;
+	}
+	.container-text h1 {
+		font-size: 3rem;
+	}
+	.container-text h3 {
+		font-size: 2.8em;
+	}
+	.container-text p {
+		font-size: 2rem;
+		width: 70%;
+	}
+	.container-img {
+		margin-right: 1.8em;
+	}
+	.button-contact-mobile {
+		font-size: 2.3rem;
+	}
+	.icon-msg {
+		width: 50px;
+		height: 50px;
 	}
 	.img-me {
 		width: 120px;
@@ -205,38 +242,5 @@
 	.icon-down {
 		width: 50px;
 		height: 50px;
-	}
-}
-@media (min-width: 992px) {
-	.button-portfolio {
-		font-size: 2.2rem;
-	}
-	.container-text h1 {
-		font-size: 3rem;
-	}
-	.container-text h3 {
-		font-size: 2em;
-	}
-	.container-text p {
-		font-size: 1.6rem;
-		width: 70%;
-	}
-	.container-img {
-		margin-right: 2em;
-	}
-	.button-contact-mobile {
-		font-size: 2.6rem;
-	}
-	.icon-msg {
-		width: 50px;
-		height: 50px;
-	}
-	.img-me {
-		width: 160px;
-		height: 160px;
-	}
-	.icon-down {
-		width: 42px;
-		height: 42px;
 	}
 }

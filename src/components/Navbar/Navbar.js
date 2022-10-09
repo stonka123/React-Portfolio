@@ -61,17 +61,18 @@ function Navbar(props) {
 							<a href=''>Projects</a>
 							<a href=''>Contact</a>
 						</div>
+						<div className={styles['container-social']}>
+							<a className={styles['social-box']}>
+								<FaGithub className={styles['social-icon']} />
+							</a>
+							<a className={styles['social-box']}>
+								<FaLinkedinIn className={styles['social-icon']} />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div className={styles['container-social']}>
-				<a className={styles['social-box']}>
-					<FaGithub className={styles['social-icon']} />
-				</a>
-				<a className={styles['social-box']}>
-					<FaLinkedinIn className={styles['social-icon']} />
-				</a>
-			</div>
+
 			<Menu showMenu={isOpen} closeMenu={setIsOpen} checkMenu={scrolled} />
 		</>
 	)
