@@ -20,7 +20,10 @@
 	top: 0;
 	z-index: 10;
 	padding: 1em;
+	border-bottom: 1px solid transparent;
+	background-color: transparent;
 }
+
 .logo-container {
 	display: flex;
 	align-items: center;
@@ -51,7 +54,7 @@
 	display: none;
 }
 .scrolledNavBar {
-	transition: background-color 0.3s;
+	transition: all 0.3s;
 	background-color: black;
 	border-bottom: 1px solid rgba(128, 0, 128, 0.4);
 }
@@ -67,14 +70,15 @@
 		display: flex;
 		z-index: 8;
 	}
-
-	.wrapper {
+	.deskopWrapperContainer {
 		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		height: 12vh;
 		width: 100vw;
+		border-bottom: 1px solid transparent;
+		background-color: transparent;
 	}
 	.wrapperContainer {
 		position: fixed;
@@ -85,10 +89,14 @@
 		align-items: center;
 		justify-content: space-between;
 		max-width: 1200px;
-
 		margin: 0 auto;
 		height: 12vh;
 		padding: 2em;
+	}
+	.scrolledNavBarDesktop {
+		transition: all 0.3s;
+		background-color: black;
+		border-bottom: 1px solid rgba(128, 0, 128, 0.4);
 	}
 	.logo-text-desktop {
 		font-size: 2rem;

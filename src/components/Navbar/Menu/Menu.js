@@ -8,8 +8,15 @@ const Menu = props => {
 		props.closeMenu(false)
 	}
 
+	if (props.showMenu) {
+		document.body.style.overflow = 'hidden'
+	} else {
+		document.body.style.overflow = 'inherit'
+	}
+
 	return (
-		<div className={props.showMenu ? `${styles.showMenu} ${styles.menu}` : `${styles.menu}`}>
+		<div className={props.showMenu ? `${styles.showMenu} ${styles.menu} ` : `${styles.menu}`}>
+			<div className={styles['bgc-menu']}></div>
 			<div className={styles['menu-container']}>
 				<a onClick={closeMenuHandler} href='#'>
 					Home

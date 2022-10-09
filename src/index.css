@@ -20,6 +20,8 @@ html {
 	font-size: 62.5%;
 	color: var(--white-fonts);
 	font-style: normal;
+	scroll-behavior: smooth;
+	scroll-padding-top: 10vh;
 }
 .wrapper {
 	margin: 0 auto;

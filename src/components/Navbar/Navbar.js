@@ -29,7 +29,9 @@ function Navbar(props) {
 			<div className={styles['navbar-container']}>
 				<div
 					className={
-						scrolled ? `${styles.mobileWrapperContainer} ${styles.scrolledNavBar}` : `${styles.mobileWrapperContainer}`
+						scrolled && !isOpen
+							? `${styles.mobileWrapperContainer} ${styles.scrolledNavBar}`
+							: `${styles.mobileWrapperContainer}`
 					}>
 					<div className={styles['logo-container']}>
 						<p className={styles['logo-text']}>TomaszTwarowski</p>
@@ -42,7 +44,12 @@ function Navbar(props) {
 			</div>
 
 			<div className={styles['navigation-desktop']}>
-				<div className={scrolled ? `${styles.wrapper} ${styles.scrolledNavBar}` : `${styles.wrapper}`}>
+				<div
+					className={
+						scrolled
+							? `${styles.deskopWrapperContainer} ${styles.scrolledNavBarDesktop}`
+							: `${styles.deskopWrapperContainer}`
+					}>
 					<div className={styles.wrapperContainer}>
 						<div className={styles['logo-container-desktop']}>
 							<p className={styles['logo-text-desktop']}>TomaszTwarowski</p>
@@ -65,7 +72,7 @@ function Navbar(props) {
 					<FaLinkedinIn className={styles['social-icon']} />
 				</a>
 			</div>
-			<Menu showMenu={isOpen} closeMenu={setIsOpen} />
+			<Menu showMenu={isOpen} closeMenu={setIsOpen} checkMenu={scrolled} />
 		</>
 	)
 }
