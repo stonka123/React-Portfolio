@@ -1,5 +1,5 @@
 .menu {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -16,16 +16,14 @@
 	z-index: 3;
 	transform: translateX(100%);
 	transition: transform 0.4s;
+	overflow: hidden;
 }
 .showMenu {
 	transform: translateX(0);
+	height: 100vh;
+	overflow-y: hidden;
 }
-.gif {
-	position: absolute;
-	top: 5%;
-	left: 5%;
-	width: 40px;
-}
+
 .menu-container {
 	display: flex;
 	align-items: center;

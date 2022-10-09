@@ -3,7 +3,6 @@
 	width: 100vw;
 	height: 100vh;
 	top: 0;
-	left: 0;
 	overflow: hidden;
 }
 
@@ -19,7 +18,7 @@
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
-	filter: brightness(0.25);
+	filter: brightness(0.5);
 	z-index: -1;
 }
 .bgcImage {
@@ -31,8 +30,8 @@
 }
 .container-header {
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: flex-end;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
@@ -47,15 +46,16 @@
 	background: rgb(99, 41, 86);
 	background: linear-gradient(90deg, rgba(99, 41, 86, 1) 0%, rgba(55, 35, 108, 1) 100%);
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--white-fonts);
 	border: 1px solid var(--gray-fonts);
-	padding: 0.4em 0.2em;
-	margin: 0.2em;
+	padding: 0.8em 0.3em;
+	margin: 0.3em;
+	margin-bottom: 1em;
 	cursor: pointer;
-	transition: background 2s linear;
+	transition: all 0.9s linear;
 }
 .button-portfolio:hover {
 	background: rgb(99, 41, 86);
@@ -63,23 +63,22 @@
 }
 .container-text h1 {
 	padding: 0.3em;
-	font-size: 2.2rem;
+	font-size: 2rem;
+	margin-bottom: 0.5em;
 }
 
 .container-text h3 {
 	margin-top: 0;
 	padding: 0.3em;
-	font-size: 1.9em;
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
 }
 .container-text p {
 	width: 90%;
-	font-size: 1.4rem;
+	font-size: 1rem;
 	padding: 0.3em;
 	color: var(--dark-fonts);
-}
-
-.button-contact {
-	visibility: hidden;
+	margin-bottom: 1em;
 }
 
 .container-img {
@@ -117,8 +116,8 @@
 	padding: 0.3em;
 }
 .img-me {
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	border-radius: 50%;
 	border: 2px solid var(--gray-fonts);
 }

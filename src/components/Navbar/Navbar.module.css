@@ -1,11 +1,25 @@
 .navbar-container {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5em;
+	height: 10vh;
+	margin: 0 auto;
+	width: 100%;
+	top: 0;
+	/* position: relative; */
+}
+.mobileWrapperContainer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	height: 10vh;
+	position: fixed;
+	top: 0;
+	z-index: 10;
 	padding: 1em;
-	height: 10%;
-	max-width: 1200px;
-	position: relative;
 }
 .logo-container {
 	display: flex;
@@ -29,24 +43,76 @@
 	display: none;
 }
 .hamburger-react {
+	right: 0;
 	z-index: 5;
+	margin-right: 1em;
 }
 .container-social {
 	display: none;
 }
-
+.scrolledNavBar {
+	transition: background-color 0.3s;
+	background-color: black;
+	border-bottom: 1px solid rgba(128, 0, 128, 0.4);
+}
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
 }
 @media (min-width: 992px) {
-	.logo-text {
+	.navbar-container {
+		display: none;
+	}
+	.navigation-desktop {
+		display: flex;
+		z-index: 8;
+	}
+
+	.wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 12vh;
+		width: 100vw;
+	}
+	.wrapperContainer {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 1200px;
+
+		margin: 0 auto;
+		height: 12vh;
+		padding: 2em;
+	}
+	.logo-text-desktop {
 		font-size: 2rem;
-		opacity: 0.7;
 		color: var(--gray-fonts);
 	}
-	.logo {
-		width: 50px;
+	.logo-desktop {
+		width: 60px;
+		opacity: 0.7;
+		rotate: 45deg;
+	}
+	.logo-container-desktop {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.navigation-container a {
+		text-decoration: none;
+		color: var(--gray-fonts);
+		padding: 0.5em 1em;
+		margin: 1em;
+		font-size: 2rem;
+	}
+	.navigation-desktop a:last-child {
+		margin: 0;
 	}
 	.container-social {
 		display: block;
@@ -69,7 +135,6 @@
 		cursor: pointer;
 	}
 	.social-icon {
-		position: absolute;
 		display: inline-block;
 		color: var(--gray-fonts);
 		width: 25px;
@@ -79,18 +144,5 @@
 	}
 	.hamburger-react {
 		display: none;
-	}
-	.navigation-desktop {
-		display: block;
-	}
-	.navigation-desktop a {
-		text-decoration: none;
-		color: var(--gray-fonts);
-		padding: 0.5em 1em;
-		margin: 1em;
-		font-size: 1.6rem;
-	}
-	.navigation-desktop a:last-child {
-		margin: 0;
 	}
 }

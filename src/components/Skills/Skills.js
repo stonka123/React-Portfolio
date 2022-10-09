@@ -7,7 +7,7 @@ const Skills = () => {
 		superLargeDesktop: {
 			// the naming can be any, depends on you.
 			breakpoint: { max: 4000, min: 3000 },
-			items: 5,
+			items: 3,
 		},
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
@@ -25,6 +25,12 @@ const Skills = () => {
 	return (
 		<section className={styles.skills} id='skills'>
 			<div className={styles['bgc-skills']}></div>
+			<svg width='0' height='0'>
+				<linearGradient id='blue-gradient' x1='50%' y1='100%' x2='50%' y2='0%'>
+					<stop stopColor='#7a6ded' offset='0%' />
+					<stop stopColor='#591885' offset='100%' />
+				</linearGradient>
+			</svg>
 			<div className={styles['skill-box']}>
 				<h3>Skills</h3>
 				<p>
@@ -35,7 +41,6 @@ const Skills = () => {
 				<Carousel
 					responsive={responsive}
 					customTransition='all 0.7s'
-					autoPlaySpeed={1000}
 					infinite={true}
 					className={styles['skill-slider']}>
 					<div>
