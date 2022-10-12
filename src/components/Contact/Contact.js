@@ -4,7 +4,7 @@ import ImgMsg from '../../assets/img/msg-logo.png'
 
 const Contact = () => {
 	return (
-		<div className={styles.contact} id='contact'>
+		<section className={`${styles.contact} wrapper`} id='contact'>
 			<div className={styles['contact-container']}>
 				<div className={styles.left}>
 					<img src={ImgMsg} className={styles.img} />
@@ -20,17 +20,26 @@ const Contact = () => {
 					</div>
 					<form action=''>
 						<div className={styles['form-top']}>
-							<input type='text' id='name' placeholder='Name' />
-							<input type='text' id='surname' placeholder='surname' />
-							<input type='text' id='email' placeholder='email' />
-							<input type='text' id='subjects' placeholder='subjects' />
-							<textarea name='msg' id='msg' rows='5' placeholder='Message'></textarea>
-							<button className={styles.btn}>Send</button>
+							<div className={styles['form-inputs']}>
+								<input type='text' id='name' placeholder='Name' />
+								<input type='text' id='surname' placeholder='Surname' />
+								<input type='text' id='email' placeholder='E-mail' />
+								<input type='text' id='subjects' placeholder='Subjects' />
+							</div>
+							<div className={styles['form-area']}>
+								<textarea
+									className={styles['form-textarea']}
+									name='msg'
+									id='msg'
+									rows='5'
+									placeholder='Message'></textarea>
+								<button className={styles.btn}>Send</button>
+							</div>
 						</div>
 					</form>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

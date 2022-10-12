@@ -2,6 +2,6 @@
 	--white-fonts: #fdfdfd;
 	--gray-fonts: #e0e0e0;
 	--dark-fonts: rgb(153, 153, 153);
-	--gradient: linear-gradient(90deg, rgba(117, 0, 209, 1) 0%, rgba(121, 9, 99, 1) 44%, rgba(70, 0, 56, 1) 100%);
+	--gradient: rgb(152, 46, 113) linear-gradient(90deg, rgba(152, 46, 113, 1) 0%, rgba(74, 42, 172, 1) 100%);
 	--add-color: #0091ff;
 }

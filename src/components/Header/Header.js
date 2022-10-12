@@ -8,6 +8,8 @@ import logoImg from '../../assets/img/logo-cosmos.png'
 import { FiArrowRightCircle, FiChevronDown } from 'react-icons/fi'
 
 const Header = props => {
+	
+	  
 	return (
 		<section className={styles.header} id='home'>
 			<div className={styles.background}></div>

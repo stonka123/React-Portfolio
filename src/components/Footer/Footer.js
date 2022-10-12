@@ -7,9 +7,10 @@ const Footer = props => {
 
 	return (
 		<div className={styles.footer}>
-			<div className={styles['footer-container']}>
-				<img className={styles.logo} src={FooterImg} alt='' />
-				<p></p>
+			<div className={`${styles['footer-container']} wrapper`}>
+				<div className={styles['logo-container']}>
+					<img className={styles.logo} src={FooterImg} alt='' />
+				</div>
 				<div className={styles['social-container']}>
 					<div className={styles['social-box']}>
 						<a className={styles['container-social-icon']} href=''>

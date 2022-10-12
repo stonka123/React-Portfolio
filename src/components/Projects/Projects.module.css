@@ -4,6 +4,7 @@
 	justify-content: center;
 	position: relative;
 	top: 0;
+	margin: 1em auto;
 }
 .projects-container {
 	display: flex;
@@ -12,8 +13,8 @@
 	flex-direction: column;
 	width: 90%;
 	max-width: 1200px;
-	margin: 1em auto;
-	/* padding: 1em; */
+	margin: 2em auto;
+	padding: 1em;
 	border-radius: 25px;
 	background-color: black;
 	z-index: 2;
@@ -36,6 +37,8 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+
+	margin: 1em;
 }
 .card {
 	width: 80%;

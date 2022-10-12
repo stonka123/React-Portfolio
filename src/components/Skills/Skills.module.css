@@ -3,8 +3,8 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	top: 0;
-	height: 100vh;
+	margin: 5em 0;
+	/* height: 75vh; */
 }
 
 .bgc-skills {
@@ -58,4 +58,10 @@
 .skill-slider p {
 	color: var(--gray-fonts);
 	font-size: 1.6em;
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
 }
