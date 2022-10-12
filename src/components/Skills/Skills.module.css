@@ -2,19 +2,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* position: absolute; */
-	/* width: 100vw; */
-	/* margin: 0 auto; */
-
-	/* overflow: hidden; */
 	position: relative;
+	top: 0;
 	height: 100vh;
 }
 
 .bgc-skills {
 	position: absolute;
 	top: 0;
-	background-image: url(../../assets//img/bgc_skills-small.jpg);
+	background-image: url(../../assets//img/bgc_skill-test-big.jpg);
 	background-position: center;
 	background-size: cover;
 	width: 100%;

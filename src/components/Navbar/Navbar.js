@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Twirl as Hamburger } from 'hamburger-react'
 import styles from './Navbar.module.css'
-import logoImg from '../../assets/img/rocket-gif.gif'
 import Menu from './Menu/Menu'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-
 function Navbar(props) {
 	const [isOpen, setIsOpen] = useState(false)
 	const [scrolled, setScrolled] = useState(false)
@@ -34,8 +32,7 @@ function Navbar(props) {
 							: `${styles.mobileWrapperContainer}`
 					}>
 					<div className={styles['logo-container']}>
-						<p className={styles['logo-text']}>TomaszTwarowski</p>
-						<img className={styles['logo']} src={logoImg} alt='logo' />
+						<img className={styles['logo']} src={props.logoImg} alt='logo' />
 					</div>
 					<div className={styles['hamburger-react']}>
 						<Hamburger size={26} toggled={isOpen} toggle={setIsOpen} />
@@ -47,33 +44,41 @@ function Navbar(props) {
 				<div
 					className={
 						scrolled
-							? `${styles.deskopWrapperContainer} ${styles.scrolledNavBarDesktop}`
-							: `${styles.deskopWrapperContainer}`
+							? `${styles.deskopWrapperContainer} ${styles.scrolledNavBarDesktop} `
+							: `${styles.deskopWrapperContainer} `
 					}>
 					<div className={styles.wrapperContainer}>
 						<div className={styles['logo-container-desktop']}>
-							<p className={styles['logo-text-desktop']}>TomaszTwarowski</p>
-							<img className={styles['logo-desktop']} src={logoImg} alt='logo' />
+							<img className={styles['logo-desktop']} src={props.logoImg} alt='logo' />
 						</div>
 						<div className={styles['navigation-container']}>
 							<a href=''>Home</a>
 							<a href=''>Skills</a>
 							<a href=''>Projects</a>
+							<div className={styles['container-social']}>
+								<div className={styles['social-box']}>
+									<a className={styles['container-social-icon']} href=''>
+										<FaGithub className={styles['social-icon']} />
+									</a>
+								</div>
+								<div className={styles['social-box']}>
+									<a className={styles['container-social-icon']} href=''>
+										<FaLinkedinIn className={styles['social-icon']} />
+									</a>
+								</div>
+							</div>
 							<a href=''>Contact</a>
-						</div>
-						<div className={styles['container-social']}>
-							<a className={styles['social-box']}>
-								<FaGithub className={styles['social-icon']} />
-							</a>
-							<a className={styles['social-box']}>
-								<FaLinkedinIn className={styles['social-icon']} />
-							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<Menu showMenu={isOpen} closeMenu={setIsOpen} checkMenu={scrolled} />
+			<Menu
+				showMenu={isOpen}
+				closeMenu={setIsOpen}
+				checkMenu={scrolled}
+				iconGH={<FaGithub />}
+				iconLI={<FaLinkedinIn />}
+			/>
 		</>
 	)
 }

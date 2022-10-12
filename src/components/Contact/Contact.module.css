@@ -1,0 +1,90 @@
+.contact {
+	bottom: 0;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: rgb(152, 46, 113);
+	background: linear-gradient(90deg, rgba(152, 46, 113, 1) 0%, rgba(74, 42, 172, 1) 100%);
+	border-radius: 25px 25px 0 0;
+}
+.contact-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 1em;
+	max-width: 1200px;
+	margin: 1em auto 0;
+
+	z-index: 2;
+}
+
+.img {
+	width: 100px;
+}
+.right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.top {
+	text-align: center;
+}
+.top h3 {
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 0.5em;
+}
+.top p {
+	color: var(--dark-fonts);
+	font-size: 1.2rem;
+	padding: 0.5em;
+	text-align: center;
+	max-width: 800px;
+}
+
+.form-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+}
+.form-top input {
+	padding: 0.5em 0.8em;
+	margin: 0.2em;
+	border-radius: 10px;
+	border: 1px solid var(--dark-fonts);
+	color: var(--white-fonts);
+	width: 100%;
+	height: 40px;
+	background: rgba(185, 213, 255, 0.1);
+}
+.form-top input:focus,
+.form-top textarea:focus {
+	outline: none;
+}
+.form-top input::placeholder,
+.form-top textarea::placeholder {
+	color: var(--gray-fonts);
+}
+.form-top textarea {
+	resize: none;
+	padding: 0.5em 0.8em;
+	margin: 0.2em;
+	border-radius: 10px;
+	border: 1px solid var(--dark-fonts);
+	color: var(--white-fonts);
+	width: 100%;
+	background: rgba(185, 213, 255, 0.1);
+}
+.btn {
+	align-self: flex-end;
+	margin: 1em 0.5em;
+	padding: 0.8em 0.5em;
+	border: none;
+	width: 100px;
+}

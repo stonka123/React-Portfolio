@@ -1,8 +1,18 @@
 import styles from './Skills.module.css'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import { SiReact, SiJavascript, SiHtml5, SiBootstrap, SiGit, SiCss3, SiTypescript } from 'react-icons/si'
-const Skills = () => {
+import {
+	SiReact,
+	SiJavascript,
+	SiHtml5,
+	SiBootstrap,
+	SiGit,
+	SiCss3,
+	SiTypescript,
+	SiSass,
+	SiAdobephotoshop,
+} from 'react-icons/si'
+const Skills = props => {
 	const responsive = {
 		superLargeDesktop: {
 			// the naming can be any, depends on you.
@@ -24,7 +34,6 @@ const Skills = () => {
 	}
 	return (
 		<section className={styles.skills} id='skills'>
-			<div className={styles['bgc-skills']}></div>
 			<svg width='0' height='0'>
 				<linearGradient id='blue-gradient' x1='50%' y1='100%' x2='50%' y2='0%'>
 					<stop stopColor='#7a6ded' offset='0%' />
@@ -64,12 +73,20 @@ const Skills = () => {
 						<p>CSS3</p>
 					</div>
 					<div>
+						<SiSass className={styles['skill-icon']} />
+						<p>SASS</p>
+					</div>
+					<div>
 						<SiBootstrap className={styles['skill-icon']} />
 						<p>Bootstrap</p>
 					</div>
 					<div>
 						<SiGit className={styles['skill-icon']} />
 						<p>Git</p>
+					</div>
+					<div>
+						<SiAdobephotoshop className={styles['skill-icon']} />
+						<p>Adobe Photoshop</p>
 					</div>
 				</Carousel>
 			</div>

@@ -6,7 +6,7 @@
 	padding: 1.5em;
 	height: 10vh;
 	margin: 0 auto;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	/* position: relative; */
 }
@@ -28,19 +28,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: row;
+	flex-direction: column;
 	padding: 0.5em;
-}
-.logo-text {
-	padding: 0;
-	color: var(--add-color);
-	/* opacity: 0.5; */
+	height: 100%;
 }
 
 .logo {
-	width: 30px;
-	opacity: 0.7;
-	/* rotate: 45deg; */
+	height: 100%;
 }
 
 .navigation-desktop {
@@ -56,8 +50,9 @@
 }
 .scrolledNavBar {
 	transition: all 0.3s;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	border-bottom: 1px solid rgba(0, 145, 255, 0.4);
+	width: 100%;
 }
 @media (min-width: 576px) {
 }
@@ -71,6 +66,8 @@
 		display: flex;
 		z-index: 8;
 		position: relative;
+		width: 100vw;
+		top: 0;
 	}
 	.deskopWrapperContainer {
 		position: fixed;
@@ -78,9 +75,10 @@
 		left: 0;
 		right: 0;
 		height: 12vh;
-		width: 100vw;
+		width: 100%;
 		border-bottom: 1px solid transparent;
 		background-color: transparent;
+		overflow: hidden;
 	}
 	.wrapperContainer {
 		position: fixed;
@@ -93,6 +91,7 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		height: 12vh;
+		width: 100%;
 		padding: 2em;
 	}
 	.scrolledNavBarDesktop {
@@ -106,14 +105,18 @@
 	}
 	.logo-desktop {
 		width: 60px;
-		opacity: 0.7;
-		rotate: 45deg;
 	}
 	.logo-container-desktop {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+	.navigation-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.navigation-container a {
 		text-decoration: none;
 		color: var(--gray-fonts);
@@ -122,19 +125,10 @@
 		font-size: 2rem;
 	}
 	.navigation-desktop a:last-child {
-		margin: 0;
+		margin-left: 1em;
 	}
 	.container-social {
-		position: absolute;
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		right: 0;
-		top: 10vh;
-		margin-top: 1em;
-		margin-right: 1em;
-		max-width: 1200px;
 	}
 	.social-box {
 		display: flex;
@@ -142,21 +136,28 @@
 		justify-content: center;
 		position: relative;
 		border-radius: 50%;
-		margin: 2em;
-		border: 0.5px solid var(--gray-fonts);
-		width: 50px;
-		height: 50px;
+		border: 1px solid var(--gray-fonts);
+		width: 40px;
+		margin: 0.5em;
+		height: 40px;
 		text-align: center;
 		background-color: #262626;
 		cursor: pointer;
 	}
+	.social-box:hover {
+		border: 1px solid var(--add-color);
+	}
+	.container-social-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.social-icon {
 		display: inline-block;
+		position: absolute;
 		color: var(--gray-fonts);
-		width: 25px;
-		height: 25px;
-		padding: 0.2em;
-		margin: 1em;
+		width: 20px;
+		height: 20px;
 	}
 	.hamburger-react {
 		display: none;
