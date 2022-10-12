@@ -37,15 +37,11 @@ const Projects = props => {
 							<div className={styles['card-back']}>
 								<div className={styles['project-bgc']}></div>
 								<div className={styles['project-link']}>
-									<a href='github.com' target='_blank'>
-										Live
-									</a>
-									<a href='github.com' target='_blank'>
-										{' '}
-										Repozytorium
-									</a>
+									<a href='github.com'> Repozytorium</a>
+									<a href='github.com'> Live</a>
 								</div>
 							</div>
+
 							<img src={ImgProject1} alt='' className={styles['card-img']} />
 						</div>
 
@@ -60,15 +56,11 @@ const Projects = props => {
 							<div className={styles['card-back']}>
 								<div className={styles['project-bgc']}></div>
 								<div className={styles['project-link']}>
-									<a href='github.com' target='_blank'>
-										Live
-									</a>
-									<a href='github.com' target='_blank'>
-										{' '}
-										Repozytorium
-									</a>
+									<a href='github.com'> Repozytorium</a>
+									<a href='github.com'> Live</a>
 								</div>
 							</div>
+
 							<img src={ImgProject1} alt='' className={styles['card-img']} />
 						</div>
 

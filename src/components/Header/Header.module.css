@@ -25,6 +25,7 @@
 	width: 40%;
 	max-width: 300px;
 	align-self: flex-end;
+	animation: astroFly 3s infinite alternate;
 }
 .wrapperText {
 	width: 100%;
@@ -53,8 +54,7 @@
 }
 .button-portfolio {
 	text-align: center;
-	background: rgb(99, 41, 86);
-	background: linear-gradient(90deg, rgba(99, 41, 86, 1) 0%, rgba(55, 35, 108, 1) 100%);
+	background: var(--gradient);
 	text-decoration: none;
 	width: 150px;
 	font-size: 1rem;
@@ -151,6 +151,15 @@
 }
 .icon-down-icon:hover {
 	color: var(--add-color);
+}
+
+@keyframes astroFly {
+	from {
+		transform: translateY(0) rotate(-5);
+	}
+	to {
+		transform: translateY(30px) rotate(5deg);
+	}
 }
 
 @media (min-width: 576px) {

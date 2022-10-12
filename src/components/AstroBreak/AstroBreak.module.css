@@ -1,0 +1,23 @@
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	margin: 2em 0;
+}
+.img {
+	rotate: 0deg;
+	height: 100%;
+	animation: astroBreak 4s infinite alternate;
+}
+
+@keyframes astroBreak {
+	0% {
+		transform: translateY(-5px) rotate(-5deg);
+	}
+
+	100% {
+		transform: translateY(5px) rotate(5deg);
+	}
+}
