@@ -19,6 +19,7 @@
 	background: rgb(152, 46, 113);
 	background: linear-gradient(90deg, rgba(152, 46, 113, 1) 0%, rgba(74, 42, 172, 1) 100%);
 	z-index: 2;
+	position: relative;
 }
 
 .left {
@@ -109,6 +110,42 @@
 	padding: 0.8em 0.5em;
 	border: none;
 	width: 100px;
+}
+.alert {
+	position: absolute;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 6;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 24px;
+	background-color: black;
+}
+.alert {
+	font-size: 1.2rem;
+	padding: 0.5em;
+}
+.alert button {
+	width: 50%;
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 0;
+	border: none;
+}
+.header {
+	font-size: 1.5rem;
+	padding: 0.5em;
+}
+.alert-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.alert-container img {
+	width: 30%;
 }
 
 @media (min-width: 576px) {
