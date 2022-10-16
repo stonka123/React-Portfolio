@@ -8,8 +8,6 @@ import logoImg from '../../assets/img/logo-cosmos.png'
 import { FiArrowRightCircle, FiChevronDown } from 'react-icons/fi'
 
 const Header = props => {
-	
-	  
 	return (
 		<section className={styles.header} id='home'>
 			<div className={styles.background}></div>
@@ -31,7 +29,7 @@ const Header = props => {
 					</div>
 				</div>
 				<div className={styles['container-img']}>
-					<a className={styles['button-contact-mobile']}>
+					<a className={styles['button-contact-mobile']} href='#contact'>
 						<p>Contact me</p> <FiArrowRightCircle className={styles['icon-msg']} />
 					</a>
 					<img src={imageMe} alt='' className={styles['img-me']} />

@@ -1,0 +1,15 @@
+.backgroundT {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../../assets/img/header_bgc_small.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	filter: brightness(0.6);
+	z-index: -1;
+}

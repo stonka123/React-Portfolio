@@ -51,26 +51,7 @@ const Projects = props => {
 							<SiBootstrap className={styles.icon} />
 						</div>
 					</div>
-					<div className={styles.card}>
-						<div className={styles['card-top']}>
-							<div className={styles['card-back']}>
-								<div className={styles['project-bgc']}></div>
-								<div className={styles['project-link']}>
-									<a href='github.com'> Repozytorium</a>
-									<a href='github.com'> Live</a>
-								</div>
-							</div>
-
-							<img src={ImgProject1} alt='' className={styles['card-img']} />
-						</div>
-
-						<div className={styles.stack}>
-							<SiJavascript className={styles.icon} />
-							<SiGit className={styles.icon} />
-							<SiBootstrap className={styles.icon} />
-						</div>
-					</div>
-				</div>
+cdc				</div>
 			</div>
 		</section>
 	)

@@ -6,7 +6,7 @@
 	overflow: hidden;
 }
 
-.background {
+/* .background {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -20,7 +20,7 @@
 	height: 100%;
 	filter: brightness(0.6);
 	z-index: -1;
-}
+} */
 .headerIcon {
 	width: 40%;
 	max-width: 300px;
@@ -73,19 +73,19 @@
 }
 .container-text h1 {
 	padding: 0.3em;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin-bottom: 0.2em;
 }
 
 .container-text h3 {
 	margin-top: 0;
 	padding: 0.3em;
-	font-size: 1.8em;
+	font-size: 2.1em;
 	margin-bottom: 0.2em;
 }
 .container-text p {
 	width: 90%;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	padding: 0.3em;
 	color: var(--dark-fonts);
 	margin-bottom: 1em;
