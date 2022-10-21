@@ -21,10 +21,9 @@ html {
 	color: var(--white-fonts);
 	font-style: normal;
 	scroll-behavior: smooth;
-	scroll-padding-top: 10vh;
+	scroll-padding-top: 70px;
 }
 body {
-	
 	overflow-x: hidden;
 }
 .wrapper {

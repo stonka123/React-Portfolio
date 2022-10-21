@@ -51,7 +51,7 @@ const Projects = props => {
 							<SiBootstrap className={styles.icon} />
 						</div>
 					</div>
-cdc				</div>
+				</div>
 			</div>
 		</section>
 	)

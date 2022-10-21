@@ -52,9 +52,9 @@ function Navbar(props) {
 							<img className={styles['logo-desktop']} src={props.logoImg} alt='logo' />
 						</div>
 						<div className={styles['navigation-container']}>
-							<a href=''>Home</a>
-							<a href=''>Skills</a>
-							<a href=''>Projects</a>
+							<a href='#home'>Home</a>
+							<a href='#skills'>Skills</a>
+							<a href='#projects'>Projects</a>
 							<div className={styles['container-social']}>
 								<div className={styles['social-box']}>
 									<a className={styles['container-social-icon']} href=''>
