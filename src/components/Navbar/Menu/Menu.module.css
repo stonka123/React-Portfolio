@@ -61,7 +61,7 @@
 	justify-content: center;
 	position: relative;
 	margin: 1em;
-	border: 0.5px solid var(--gray-fonts);
+	border: 0.5px solid var(--add-color);
 	border-radius: 50%;
 
 	text-align: center;
@@ -71,7 +71,7 @@
 .social-icon {
 	position: relative;
 	display: inline-block;
-	color: var(--add-color);
+	color: var(--white-fonts);
 	width: 20px;
 	height: 20px;
 	padding: 0.2em;
