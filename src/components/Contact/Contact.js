@@ -3,7 +3,7 @@ import styles from './Contact.module.css'
 import ImgMsg from '../../assets/img/msg-logo.png'
 import ImgAlert from '../../assets/img/email-img.png'
 import emailjs from '@emailjs/browser'
-
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 const Contact = () => {
 	const form = useRef()
 
@@ -36,41 +36,43 @@ const Contact = () => {
 	)
 	return (
 		<section className={`${styles.contact} wrapper`} id='contact'>
-			<div className={styles['contact-container']}>
-				{status === 'Succes' ? renderAlert() : null}
-				<div className={styles.left}>
-					<img src={ImgMsg} className={styles.img} />
-				</div>
-				<div className={styles.right}>
-					<div className={styles.top}>
-						<h3>Contact me</h3>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vitae molestiae assumenda, qui
-							ipsum iusto quod similique delectus eligendi quia dolorum! Quam at officiis sint qui pariatur? Rerum, ab
-							velit!
-						</p>
+			<AnimationOnScroll animateIn='animate__fadeInLeftBig' animateOnce={true}>
+				<div className={styles['contact-container']}>
+					{status === 'Succes' ? renderAlert() : null}
+					<div className={styles.left}>
+						<img src={ImgMsg} className={styles.img} />
 					</div>
-					<form ref={form} onSubmit={sendEmail}>
-						<div className={styles['form-top']}>
-							<div className={styles['form-inputs']}>
-								<input type='text' id='name' placeholder='Name' name='name' required />
-								<input type='text' id='surname' placeholder='Surname' name='surname' required />
-								<input type='text' id='email' placeholder='E-mail' name='email' required />
-								<input type='text' id='subjects' placeholder='Subjects' name='subject' required />
-							</div>
-							<div className={styles['form-area']}>
-								<textarea
-									className={styles['form-textarea']}
-									name='message'
-									id='message'
-									rows='5'
-									placeholder='Message'></textarea>
-								<button className={styles.btn}>Send</button>
-							</div>
+					<div className={styles.right}>
+						<div className={styles.top}>
+							<h3>Contact me</h3>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vitae molestiae assumenda, qui
+								ipsum iusto quod similique delectus eligendi quia dolorum! Quam at officiis sint qui pariatur? Rerum, ab
+								velit!
+							</p>
 						</div>
-					</form>
+						<form ref={form} onSubmit={sendEmail}>
+							<div className={styles['form-top']}>
+								<div className={styles['form-inputs']}>
+									<input type='text' id='name' placeholder='Name' name='name' required />
+									<input type='text' id='surname' placeholder='Surname' name='surname' required />
+									<input type='text' id='email' placeholder='E-mail' name='email' required />
+									<input type='text' id='subjects' placeholder='Subjects' name='subject' required />
+								</div>
+								<div className={styles['form-area']}>
+									<textarea
+										className={styles['form-textarea']}
+										name='message'
+										id='message'
+										rows='5'
+										placeholder='Message'></textarea>
+									<button className={styles.btn}>Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-			</div>
+			</AnimationOnScroll>
 		</section>
 	)
 }

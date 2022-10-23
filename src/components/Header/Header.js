@@ -7,6 +7,7 @@ import headerImg from '../../assets/img/header_icon_photo.png'
 import logoImg from '../../assets/img/logo-cosmos.png'
 import { FiArrowRightCircle, FiChevronDown } from 'react-icons/fi'
 
+
 const Header = props => {
 	return (
 		<section className={styles.header} id='home'>
@@ -14,8 +15,8 @@ const Header = props => {
 			<div className={`${styles['container-header']} wrapper`}>
 				<Navbar logoImg={logoImg} />
 				<div className={styles.wrapperText}>
-					<img src={headerImg} className={styles.headerIcon} alt='' />
-					<div className={`${styles['container-text']}`}>
+					<img src={headerImg} className={`${styles.headerIcon}`} alt='' />
+					<div className={`${styles['container-text']} animate__animated animate__backInLeft`}>
 						<a className={styles['button-portfolio']} href='#projects'>
 							Check my Projects
 						</a>
@@ -28,13 +29,15 @@ const Header = props => {
 						</p>
 					</div>
 				</div>
-				<div className={styles['container-img']}>
-					<a className={styles['button-contact-mobile']} href='#contact'>
+				<div className={`${styles['container-img']} animate__backInRight animate__animated`}>
+					<a
+						className={`${styles['button-contact-mobile']} animate__pulse animate__animated animate__infinite 	infinite animate__slow`}
+						href='#contact'>
 						<p>Contact me</p> <FiArrowRightCircle className={styles['icon-msg']} />
 					</a>
 					<img src={imageMe} alt='' className={styles['img-me']} />
 				</div>
-				<a href='#skills' className={styles['icon-down']}>
+				<a href='#skills' className={`${styles['icon-down']} animate__backInUp animate__animated`}>
 					<FiChevronDown className={styles['icon-down-icon']} />
 				</a>
 			</div>

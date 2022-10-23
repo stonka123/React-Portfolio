@@ -3,6 +3,7 @@ import { Twirl as Hamburger } from 'hamburger-react'
 import styles from './Navbar.module.css'
 import Menu from './Menu/Menu'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+
 function Navbar(props) {
 	const [isOpen, setIsOpen] = useState(false)
 	const [scrolled, setScrolled] = useState(false)
@@ -31,8 +32,8 @@ function Navbar(props) {
 							? `${styles.mobileWrapperContainer} ${styles.scrolledNavBar}`
 							: `${styles.mobileWrapperContainer}`
 					}>
-					<div className={styles['logo-container']}>
-						<img className={styles['logo']} src={props.logoImg} alt='logo' />
+					<div className={`${styles['logo-container']}`}>
+						<img className={`${styles['logo']} `} src={props.logoImg} alt='logo' />
 					</div>
 					<div className={styles['hamburger-react']}>
 						<Hamburger size={26} toggled={isOpen} toggle={setIsOpen} />
@@ -49,7 +50,11 @@ function Navbar(props) {
 					}>
 					<div className={styles.wrapperContainer}>
 						<div className={styles['logo-container-desktop']}>
-							<img className={styles['logo-desktop']} src={props.logoImg} alt='logo' />
+							<img
+								className={`${styles['logo-desktop']}  animate__animated animate__backInDown`}
+								src={props.logoImg}
+								alt='logo'
+							/>
 						</div>
 						<div className={styles['navigation-container']}>
 							<a href='#home'>Home</a>

@@ -5,6 +5,7 @@
 	position: relative;
 	top: 0;
 	margin: 1em auto;
+	overflow: hidden;
 }
 .projects-container {
 	display: flex;
@@ -18,6 +19,7 @@
 	border-radius: 25px;
 	background-color: black;
 	z-index: 2;
+	overflow: hidden;
 }
 
 .top h3 {
