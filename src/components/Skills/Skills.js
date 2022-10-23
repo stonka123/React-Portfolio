@@ -38,9 +38,9 @@ const Skills = props => {
 		<AnimationOnScroll animateIn='animate__fadeInLeftBig' animateOnce={true}>
 			<section className={styles.skills} id='skills'>
 				<svg width='0' height='0'>
-					<linearGradient id='blue-gradient' x1='50%' y1='100%' x2='50%' y2='0%'>
-						<stop stopColor='#7a6ded' offset='0%' />
-						<stop stopColor='#0091ff' offset='100%' />
+					<linearGradient id='blue-gradient' x1='0%' y1='0%' x2='100%' y2='0%'>
+						<stop stopColor='#e93ffd' offset='0%' />
+						<stop stopColor='#4639e3' offset='100%' />
 					</linearGradient>
 				</svg>
 				<div className={`${styles['skill-box']}`}>

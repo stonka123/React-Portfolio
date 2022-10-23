@@ -50,7 +50,6 @@
 	width: 100%;
 	max-width: 400px;
 	max-height: 300px;
-	margin: 1em;
 	background-color: #050e1f;
 	border-radius: 14px;
 	overflow: hidden;
@@ -81,12 +80,23 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	opacity: 0.84;
+	opacity: 0.8;
 	background: rgb(139, 20, 160);
 	background: linear-gradient(0deg, #8b14a0 0%, #00d4ff 100%);
 }
 .card:hover .card-back {
 	transform: translateY(0);
+}
+.card-back p {
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: var(--gray-fonts);
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .project-link {
 	position: absolute;
