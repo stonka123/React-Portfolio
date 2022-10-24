@@ -35,10 +35,11 @@ const Contact = () => {
 		</div>
 	)
 	return (
-		<section className={`${styles.contact} wrapper`} id='contact'>
+		<section className={`${styles.contact}`} id='contact'>
 			<AnimationOnScroll animateIn='animate__fadeInLeftBig' animateOnce={true}>
 				<div className={styles['contact-container']}>
 					{status === 'Succes' ? renderAlert() : null}
+
 					<div className={styles.left}>
 						<img src={ImgMsg} className={styles.img} />
 					</div>

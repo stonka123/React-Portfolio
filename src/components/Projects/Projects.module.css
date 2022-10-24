@@ -14,7 +14,7 @@
 	flex-direction: column;
 	width: 90%;
 	max-width: 1200px;
-	margin: 1em auto;
+	margin: 2em auto;
 	padding: 1em;
 	border-radius: 25px;
 	background-color: black;
@@ -132,4 +132,23 @@
 	width: 100%;
 	flex-direction: row;
 	background-color: #0a1c3d;
+}
+@media (min-width: 576px) {
+	.top p {
+		font-size: 1.5rem;
+	}
+}
+@media (min-width: 768px) {
+	.top p {
+		font-size: 1.8rem;
+	}
+}
+@media (min-width: 992px) {
+	.top h3 {
+		font-size: 3rem;
+	}
+	.top p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
 }

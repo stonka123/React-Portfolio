@@ -13,3 +13,9 @@
 	filter: brightness(0.6);
 	z-index: -1;
 }
+
+@media (min-width: 992px) {
+	.backgroundT {
+		background-image: url(../../assets/img/header_bgc_big.jpg);
+	}
+}
