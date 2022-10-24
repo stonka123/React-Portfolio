@@ -46,9 +46,8 @@ const Contact = () => {
 						<div className={styles.top}>
 							<h3>Contact me</h3>
 							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vitae molestiae assumenda, qui
-								ipsum iusto quod similique delectus eligendi quia dolorum! Quam at officiis sint qui pariatur? Rerum, ab
-								velit!
+								Are you looking for a fontend developer? Do you want to contact with me? Do you want to cooperate?
+								Write!
 							</p>
 						</div>
 						<form ref={form} onSubmit={sendEmail}>

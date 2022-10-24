@@ -32,10 +32,10 @@ const Menu = props => {
 				</a>
 			</div>
 			<div className={styles['social-container']}>
-				<a className={styles['social-icon-radius']} href='#'>
+				<a className={styles['social-icon-radius']} href='https://github.com/stonka123' target='_blank'>
 					<FaGithub className={styles['social-icon']} />
 				</a>
-				<a className={styles['social-icon-radius']} href='#'>
+				<a className={styles['social-icon-radius']} href='https://www.linkedin.com/in/twarowskitomasz/' target='_blank'>
 					<FaLinkedinIn className={styles['social-icon']} />
 				</a>
 			</div>

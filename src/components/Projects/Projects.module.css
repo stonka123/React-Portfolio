@@ -4,7 +4,7 @@
 	justify-content: center;
 	position: relative;
 	top: 0;
-	margin: 1em auto;
+	margin: 5em auto;
 	overflow: hidden;
 }
 .projects-container {
@@ -14,7 +14,7 @@
 	flex-direction: column;
 	width: 90%;
 	max-width: 1200px;
-	margin: 2em auto;
+	margin: 1em auto;
 	padding: 1em;
 	border-radius: 25px;
 	background-color: black;
@@ -37,7 +37,7 @@
 .bottom {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 
 	margin: 1em;
@@ -47,17 +47,18 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 100%;
-	max-width: 400px;
-	max-height: 300px;
+	height: 100%;
+	max-width: 300px;
+	max-height: 350px;
 	background-color: #050e1f;
 	border-radius: 14px;
 	overflow: hidden;
+	margin: 2em 1em;
 }
 .card-top {
 	position: relative;
 	overflow: hidden;
-	height: 100%;
+	max-height: 200px;
 	width: 100%;
 }
 .card-img {
@@ -96,6 +97,8 @@
 	color: var(--gray-fonts);
 	top: 20%;
 	left: 50%;
+	width: 100%;
+	padding: 0.5em;
 	transform: translate(-50%, -50%);
 }
 .project-link {
@@ -106,6 +109,9 @@
 	width: 100%;
 	height: 100%;
 	font-size: 1.7rem;
+}
+.project-link a:hover {
+	color: var(--dark-fonts);
 }
 .project-link a {
 	color: var(--white-fonts);
@@ -125,4 +131,5 @@
 	align-items: flex-start;
 	width: 100%;
 	flex-direction: row;
+	background-color: #0a1c3d;
 }

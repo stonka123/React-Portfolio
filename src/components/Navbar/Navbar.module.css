@@ -126,6 +126,12 @@
 		padding: 0.5em 1em;
 		margin: 1em;
 		font-size: 2rem;
+		transition: all 0.3s;
+	}
+	.navigation-container a:hover {
+		background: linear-gradient(180deg, #e93ffd 0%, #4639e3 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	.navigation-desktop a:last-child {
 		margin-left: 1em;
@@ -146,6 +152,7 @@
 		text-align: center;
 		background-color: #262626;
 		cursor: pointer;
+		transition: border 0.3s;
 	}
 	.social-box:hover {
 		border: 1px solid var(--add-color);

@@ -62,12 +62,15 @@ function Navbar(props) {
 							<a href='#projects'>Projects</a>
 							<div className={styles['container-social']}>
 								<div className={styles['social-box']}>
-									<a className={styles['container-social-icon']} href=''>
+									<a className={styles['container-social-icon']} href='https://github.com/stonka123' target='_blank'>
 										<FaGithub className={styles['social-icon']} />
 									</a>
 								</div>
 								<div className={styles['social-box']}>
-									<a className={styles['container-social-icon']} href=''>
+									<a
+										className={styles['container-social-icon']}
+										href='https://www.linkedin.com/in/twarowskitomasz/'
+										target='_blank'>
 										<FaLinkedinIn className={styles['social-icon']} />
 									</a>
 								</div>

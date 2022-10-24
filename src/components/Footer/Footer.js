@@ -13,12 +13,15 @@ const Footer = props => {
 				</div>
 				<div className={styles['social-container']}>
 					<div className={styles['social-box']}>
-						<a className={styles['container-social-icon']} href=''>
+						<a className={styles['container-social-icon']} href='https://github.com/stonka123' target='_blank'>
 							<FaGithub className={styles['social-icon']} />
 						</a>
 					</div>
 					<div className={styles['social-box']}>
-						<a className={styles['container-social-icon']} href=''>
+						<a
+							className={styles['container-social-icon']}
+							href='https://www.linkedin.com/in/twarowskitomasz/'
+							target='_blank'>
 							<FaLinkedinIn className={styles['social-icon']} />
 						</a>
 					</div>
@@ -26,7 +29,7 @@ const Footer = props => {
 				<div className={styles['text-container']}>
 					<h4>Tomasz Twarowski</h4>
 					<p>
-						&copy; <span>{date}</span>
+						<span> &copy; {date}</span>
 					</p>
 				</div>
 			</div>

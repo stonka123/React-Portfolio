@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import '../../assets/variable-css/colors.css'
-import imageMe from '../../assets/img/test2.jpg'
+import imageMe from '../../assets/img/testtest.jpg'
 import styles from './Header.module.css'
 import Navbar from '../Navbar/Navbar'
 import headerImg from '../../assets/img/header_icon_photo.png'
 import logoImg from '../../assets/img/logo-cosmos.png'
 import { FiArrowRightCircle, FiChevronDown } from 'react-icons/fi'
-
 
 const Header = props => {
 	return (
@@ -23,9 +22,10 @@ const Header = props => {
 						<h1>Hi! I'm Tomasz Twarowski</h1>
 						<h3>Frontend Developer</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati cum alias ea eaque eveniet laborum
-							modi, tempora molestiae quas quis nihil, illo iusto voluptatum recusandae. Inventore accusamus cupiditate
-							debitis veniam.
+							My programming adventure began 10 years ago with programming CNC milling machines. After several years of
+							experience, I became interested in IT technologies and I would like to develop as a frontend developer,
+							especially in the field of application development. At work, I focus on aesthetics, functionality and
+							optimal solutions.
 						</p>
 					</div>
 				</div>

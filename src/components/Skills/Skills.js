@@ -47,9 +47,8 @@ const Skills = props => {
 					<h3>Skills</h3>
 
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel provident, eum officia aut iusto sed expedita
-						fugit recusandae laudantium dignissimos, quod sint, doloribus numquam perspiciatis! Deleniti earum
-						blanditiis ut odit.
+						Below are the tools that I use in my projects to build websites and applications. I am constantly learning
+						and getting to know new technologies.
 					</p>
 					<Carousel
 						responsive={responsive}
