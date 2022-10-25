@@ -12,9 +12,9 @@ const Header = props => {
 		<section className={styles.header} id='home'>
 			<div className={`${styles['container-header']} wrapper`}>
 				<Navbar logoImg={logoImg} />
-				<div className={styles.wrapperText}>
+				<div className={`${styles.wrapperText} animate__animated animate__backInUp`}>
 					<img src={headerImg} className={`${styles.headerIcon}`} alt='' />
-					<div className={`${styles['container-text']} animate__animated animate__backInLeft`}>
+					<div className={`${styles['container-text']}`}>
 						<a className={styles['button-portfolio']} href='#projects'>
 							Check my Projects
 						</a>

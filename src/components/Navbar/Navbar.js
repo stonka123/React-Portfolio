@@ -55,15 +55,11 @@ function Navbar(props) {
 							? `${styles.deskopWrapperContainer} ${styles.scrolledNavBarDesktop} `
 							: `${styles.deskopWrapperContainer} `
 					}>
-					<div className={styles.wrapperContainer}>
+					<div className={`${styles.wrapperContainer} animate__animated animate__backInDown`}>
 						<div className={styles['logo-container-desktop']}>
-							<img
-								className={`${styles['logo-desktop']}  animate__animated animate__backInDown`}
-								src={props.logoImg}
-								alt='logo'
-							/>
+							<img className={`${styles['logo-desktop']}  `} src={props.logoImg} alt='logo' />
 						</div>
-						<div className={styles['navigation-container']}>
+						<div className={`${styles['navigation-container']} `}>
 							<a href='#home'>Home</a>
 							<a href='#skills'>Skills</a>
 							<a href='#projects'>Projects</a>
