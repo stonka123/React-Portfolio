@@ -39,6 +39,13 @@ function Navbar(props) {
 						<Hamburger size={26} toggled={isOpen} toggle={setIsOpen} />
 					</div>
 				</div>
+				<Menu
+					showMenu={isOpen}
+					closeMenu={setIsOpen}
+					checkMenu={scrolled}
+					iconGH={<FaGithub />}
+					iconLI={<FaLinkedinIn />}
+				/>
 			</div>
 
 			<div className={styles['navigation-desktop']}>
@@ -80,13 +87,6 @@ function Navbar(props) {
 					</div>
 				</div>
 			</div>
-			<Menu
-				showMenu={isOpen}
-				closeMenu={setIsOpen}
-				checkMenu={scrolled}
-				iconGH={<FaGithub />}
-				iconLI={<FaLinkedinIn />}
-			/>
 		</>
 	)
 }

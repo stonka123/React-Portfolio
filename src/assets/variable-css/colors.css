@@ -1,7 +1,7 @@
 :root {
 	--white-fonts: #fdfdfd;
-	--gray-fonts: #e0e0e0;
-	--dark-fonts: rgb(179, 179, 179);
+	--gray-fonts: #dadada;
+	--dark-fonts: #b3b3b3;
 	--gradient: #e93ffd linear-gradient(90deg, #e93ffd 0%, #4639e3 100%);
 	--add-color: #3f63fd;
 }

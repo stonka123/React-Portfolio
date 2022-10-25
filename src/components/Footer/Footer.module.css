@@ -3,11 +3,12 @@
 	align-items: center;
 	justify-content: center;
 	bottom: 0;
-	width: 100vw;
+	width: 100%;
+
 	background-color: rgba(0, 0, 0, 0.4);
 }
 .footer-container {
-	height: 10vh;
+	height: 70px;
 	padding: 1em;
 	display: flex;
 	align-items: center;
@@ -112,6 +113,9 @@
 	}
 }
 @media (min-width: 992px) {
+	.footer-container {
+		height: 100px;
+	}
 	.text-container h4 {
 		font-size: 1.8rem;
 	}

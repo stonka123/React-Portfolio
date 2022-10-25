@@ -202,13 +202,13 @@
 .form-inputs input:focus::placeholder,
 .form-area textarea:focus::placeholder {
 	font-weight: 600;
-	color: var(--dark-fonts);
+	color: var(--gray-fonts);
 }
 
 .form-inputs input::placeholder,
 .form-area textarea::placeholder {
 	font-weight: 600;
-	color: gray;
+	color: var(--dark-fonts);
 }
 @media (min-width: 576px) {
 	.top p {

@@ -39,11 +39,11 @@ const Projects = props => {
 							<div className={styles['card-top']}>
 								<div className={styles['card-back']}>
 									<div className={styles['project-bgc']}></div>
-									<p>Weather APP</p>
+									<p>Weather application</p>
 									<div className={styles['project-link']}>
 										<a href='https://github.com/stonka123/Weather-app' target='_blank'>
 											{' '}
-											Repozytorium
+											Repository
 										</a>
 										<a href='https://stonka123.github.io/Weather-app/' target='_blank'>
 											{' '}
@@ -64,11 +64,11 @@ const Projects = props => {
 							<div className={styles['card-top']}>
 								<div className={styles['card-back']}>
 									<div className={styles['project-bgc']}></div>
-									<p>Kalkulator obrotów</p>
+									<p>Calculator spindle</p>
 									<div className={styles['project-link']}>
 										<a href='https://github.com/stonka123/App-cnc' target='_blank'>
 											{' '}
-											Repozytorium
+											Repository
 										</a>
 										<a href='https://stonka123.github.io/App-cnc/' target='_blank'>
 											{' '}
@@ -89,11 +89,11 @@ const Projects = props => {
 							<div className={styles['card-top']}>
 								<div className={styles['card-back']}>
 									<div className={styles['project-bgc']}></div>
-									<p>System zarządzania firmą</p>
+									<p>Company management system</p>
 									<div className={styles['project-link']}>
 										<a href='https://github.com/stonka123/Sight-ERP' target='_blank'>
 											{' '}
-											Repozytorium
+											Repository
 										</a>
 										<a href='https://stonka123.github.io/Sight-ERP/' target='_blank'>
 											{' '}

@@ -10,7 +10,6 @@ import { FiArrowRightCircle, FiChevronDown } from 'react-icons/fi'
 const Header = props => {
 	return (
 		<section className={styles.header} id='home'>
-			<div className={styles.background}></div>
 			<div className={`${styles['container-header']} wrapper`}>
 				<Navbar logoImg={logoImg} />
 				<div className={styles.wrapperText}>
