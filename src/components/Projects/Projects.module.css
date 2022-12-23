@@ -4,17 +4,19 @@
 	justify-content: center;
 	position: relative;
 	top: 0;
-	margin: 5em auto;
 	overflow: hidden;
+	width: 90%;
+	margin: 5em auto;
+	z-index: 5;
 }
 .projects-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 90%;
+	width: 100%;
 	max-width: 1200px;
-	margin: 2em auto;
+	margin: 1em auto;
 	padding: 1em;
 	border-radius: 25px;
 	background-color: black;
@@ -39,8 +41,6 @@
 	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-
-	margin: 1em;
 }
 .card {
 	display: flex;
@@ -48,8 +48,7 @@
 	justify-content: center;
 	flex-direction: column;
 	height: 100%;
-	max-width: 300px;
-	max-height: 350px;
+	max-width: 450px;
 	background-color: #050e1f;
 	border-radius: 14px;
 	overflow: hidden;
@@ -58,15 +57,16 @@
 .card-top {
 	position: relative;
 	overflow: hidden;
-	max-height: 200px;
+	max-height: 300px;
 	width: 100%;
+	filter: brightness(80%);
 }
 .card-img {
 	display: block;
 	margin: 0 auto;
-	max-width: 100%;
-	height: auto;
-	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .card-back {
@@ -82,11 +82,12 @@
 	width: 100%;
 	height: 100%;
 	opacity: 0.8;
+	filter: brightness(20%);
 	background: rgb(139, 20, 160);
 	background: linear-gradient(0deg, #8b14a0 0%, #00d4ff 100%);
 }
 .card:hover .card-back {
-	transform: translateY(0);
+	transform: translateY(0%);
 }
 .card-back p {
 	position: absolute;
@@ -150,5 +151,12 @@
 	.top p {
 		font-size: 2rem;
 		line-height: 3rem;
+	}
+	.card {
+		max-width: 40%;
+	}
+	.bottom {
+		padding: 3em;
+		margin: 1em;
 	}
 }
