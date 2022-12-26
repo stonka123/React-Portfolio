@@ -18,7 +18,7 @@
 	align-items: flex-end;
 	justify-content: flex-end;
 	flex-direction: column;
-	height: 70%;
+	height: 100%;
 }
 
 .container-header {
@@ -52,6 +52,16 @@
 	transition: all 0.3s linear;
 	margin-bottom: 0.5em;
 	border-radius: 6px;
+	animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+	0% {
+		background: #e93ffd;
+	}
+	100% {
+		background: #4639e3;
+	}
 }
 
 .button-portfolio:hover {
@@ -77,7 +87,7 @@
 	font-size: 1.3rem;
 	padding: 0.5em;
 	color: var(--gray-fonts);
-	margin-bottom: 1em;
+
 	padding-left: 0;
 	margin-left: 0;
 	line-height: 2rem;
@@ -112,6 +122,7 @@
 .button-contact-mobile:hover {
 	color: var(--add-color);
 }
+
 .button-contact-mobile p {
 	text-align: center;
 	padding: 0;
@@ -126,7 +137,6 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	border: 2px solid var(--add-color);
 }
 .icon-down {
 	position: absolute;
@@ -252,13 +262,13 @@
 		width: 300px;
 	}
 	.container-text h1 {
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 	.container-text h3 {
-		font-size: 3em;
+		font-size: 2.6em;
 	}
 	.container-text p {
-		font-size: 2.5rem;
+		font-size: 2.1rem;
 		/* width: 80%; */
 		line-height: 3.3rem;
 	}
@@ -266,7 +276,7 @@
 		margin-right: 1.8em;
 	}
 	.button-contact-mobile {
-		font-size: 2.3rem;
+		font-size: 2.1rem;
 	}
 	.icon-msg {
 		width: 50px;

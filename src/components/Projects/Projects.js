@@ -20,13 +20,13 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 const Projects = props => {
 	return (
 		<section className={`${styles.projects} `} id='projects'>
+			<svg width='0' height='0'>
+				<linearGradient id='pink-gradient' x1='0%' y1='0%' x2='100%' y2='0%'>
+					<stop stopColor='#4639E3' offset='0%' />
+					<stop stopColor='#3F63FD' offset='100%' />
+				</linearGradient>
+			</svg>
 			<AnimationOnScroll animateIn='animate__fadeInRightBig' animateOnce={true}>
-				<svg width='0' height='0'>
-					<linearGradient id='pink-gradient' x1='0%' y1='0%' x2='100%' y2='0%'>
-						<stop stopColor='#4639E3' offset='0%' />
-						<stop stopColor='#3F63FD' offset='100%' />
-					</linearGradient>
-				</svg>
 				<div className={styles['projects-container']}>
 					<div className={styles.top}>
 						<h3>Projects</h3>
@@ -35,6 +35,7 @@ const Projects = props => {
 							together with the newly learned technology, are constantly updated.
 						</p>
 					</div>
+
 					<div className={styles.bottom}>
 						<div className={styles.card}>
 							<div className={styles['card-top']}>

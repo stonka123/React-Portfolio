@@ -4,7 +4,7 @@
 	justify-content: center;
 	position: relative;
 	top: 0;
-	margin: 5em auto;
+	margin: 1em auto;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -14,9 +14,9 @@
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 2em auto;
-	padding: 2em;
+	padding: 1em;
 	border-radius: 25px;
 	background: rgb(152, 46, 113);
 	background: linear-gradient(90deg, rgba(152, 46, 113, 1) 0%, rgba(74, 42, 172, 1) 100%);
@@ -271,6 +271,7 @@
 		border-radius: 16px;
 	}
 	.contact-container {
-		margin: 8em auto;
+		margin: 1em auto;
+		margin-bottom: 13em;
 	}
 }
