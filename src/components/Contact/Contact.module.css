@@ -6,7 +6,6 @@
 	top: 0;
 	margin: 1em auto;
 	width: 90%;
-	margin: 0 auto;
 }
 .contact-container {
 	display: flex;
@@ -81,7 +80,7 @@
 	padding: 0.5em;
 	border-radius: 10px 10px 0 0;
 	border: none;
-	border-bottom: 1px solid var(--dark-fonts);
+	border-bottom: 2px solid var(--dark-fonts);
 	color: var(--white-fonts);
 	width: 100%;
 	max-width: 750px;
@@ -104,7 +103,7 @@
 	resize: none;
 	border: none;
 	border-radius: 10px 10px 0 0;
-	border-bottom: 1px solid var(--dark-fonts);
+	border-bottom: 2px solid var(--dark-fonts);
 	color: var(--white-fonts);
 	width: 100%;
 	max-width: 500px;
@@ -199,7 +198,7 @@
 .form-inputs input:focus,
 .form-area textarea:focus {
 	outline: none;
-	border-bottom: 1px solid var(--add-color);
+	border-bottom: 2px solid var(--add-color);
 }
 .form-inputs input:focus::placeholder,
 .form-area textarea:focus::placeholder {

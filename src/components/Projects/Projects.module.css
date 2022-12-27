@@ -3,12 +3,15 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	top: 0;
 	overflow: hidden;
+	top: 0;
 	width: 90%;
-	margin: 5em auto;
+	margin: 1em auto;
 	z-index: 5;
-	width: 100vw;
+	/* width: 100vw; */
+}
+.test {
+	overflow: hidden;
 }
 .projects-container {
 	display: flex;
@@ -110,20 +113,23 @@
 	justify-content: space-around;
 	width: 100%;
 	height: 100%;
+
 	font-size: 1.7rem;
 }
 .project-link a:hover {
-	color: var(--dark-fonts);
+	color: var(--add-color);
 }
 .project-link a {
 	color: var(--white-fonts);
 	text-decoration: none;
+	transition: color 0.3s;
 }
 .icon {
-	fill: url(#pink-gradient);
+	fill: var(--add-color);
 	font-size: 2rem;
 	margin: 0.5em;
-	transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: transform 0.5s;
+	cursor: pointer;
 }
 .icon:hover {
 	transform: scale(1.1);

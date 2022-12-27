@@ -35,8 +35,8 @@ const Contact = () => {
 		</div>
 	)
 	return (
-		<section className={`${styles.contact}`} id='contact'>
-			<AnimationOnScroll animateIn='animate__fadeInLeftBig' animateOnce={true}>
+		<AnimationOnScroll animateIn='animate__fadeInLeftBig' animateOnce={true}>
+			<section className={`${styles.contact}`} id='contact'>
 				<div className={styles['contact-container']}>
 					{status === 'Succes' ? renderAlert() : null}
 
@@ -72,8 +72,8 @@ const Contact = () => {
 						</form>
 					</div>
 				</div>
-			</AnimationOnScroll>
-		</section>
+			</section>
+		</AnimationOnScroll>
 	)
 }
 

@@ -128,9 +128,7 @@
 		transition: all 0.3s;
 	}
 	.navigation-container a:hover {
-		background: linear-gradient(180deg, #e93ffd 0%, #4639e3 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		color: var(--add-color);
 	}
 	.navigation-desktop a:last-child {
 		margin-left: 1em;

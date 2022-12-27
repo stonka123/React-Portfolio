@@ -60,9 +60,8 @@
 	justify-content: center;
 	position: relative;
 	margin: 1em;
-	border: 0.5px solid var(--add-color);
+	border: 1px solid var(--add-color);
 	border-radius: 50%;
-
 	text-align: center;
 	background-color: #262626;
 }

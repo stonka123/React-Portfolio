@@ -55,17 +55,8 @@
 	animation: color-change-2x 2s linear infinite alternate both;
 }
 
-@keyframes color-change-2x {
-	0% {
-		background: #e93ffd;
-	}
-	100% {
-		background: #4639e3;
-	}
-}
-
 .button-portfolio:hover {
-	background: var(--add-color);
+	color: var(--dark-font);
 }
 .container-text h1 {
 	padding: 0.5em;
@@ -158,6 +149,14 @@
 }
 .icon-down-icon:hover {
 	color: var(--add-color);
+}
+@keyframes color-change-2x {
+	0% {
+		background: #e93ffd;
+	}
+	100% {
+		background: #4639e3;
+	}
 }
 
 @keyframes astroFly {

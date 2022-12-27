@@ -21,7 +21,7 @@ html {
 	color: var(--white-fonts);
 	font-style: normal;
 	scroll-behavior: smooth;
-	scroll-padding-top: 100px;
+	scroll-padding-top: 80px;
 }
 body {
 	overflow-x: hidden;
