@@ -36,9 +36,9 @@ const Header = props => {
 					</a>
 					<img src={imageMe} alt='' className={styles['img-me']} />
 				</div>
-				<a href='#skills' className={`${styles['icon-down']} animate__backInUp animate__animated`}>
-					<FiChevronDown className={styles['icon-down-icon']} />
-				</a>
+					<a href='#skills' className={`${styles['icon-down']} animate__backInUp animate__animated`}>
+						<FiChevronDown className={styles['icon-down-icon']} />
+					</a>
 			</div>
 		</section>
 	)
