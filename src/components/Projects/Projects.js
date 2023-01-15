@@ -4,6 +4,7 @@ import ImgProject1 from '../../assets/img/wheater-projects.jpg'
 import ImgProject2 from '../../assets/img/project2.jpg'
 import ImgProject3 from '../../assets/img/Signerp.jpg'
 import ImgProject4 from '../../assets/img/projekt4.jpg'
+import ImgProject5 from '../../assets/img/projekt5.jpg'
 import {
 	SiReact,
 	SiJavascript,
@@ -42,13 +43,38 @@ const Projects = props => {
 								<div className={styles['card-top']}>
 									<div className={styles['card-back']}>
 										<div className={styles['project-bgc']}></div>
-										<p>Weather application</p>
+										<p>Crypto Checker app</p>
 										<div className={styles['project-link']}>
-											<a href='https://github.com/stonka123/Weather-app' target='_blank'>
+											<a href='https://github.com/stonka123/crypto-app' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Repository
 											</a>
-											<a href='https://stonka123.github.io/Weather-app/' target='_blank'>
+											<a href='https://stonka123.github.io/crypto-app/' target='_blank' rel='noopener noreferrer'>
+												{' '}
+												Live
+											</a>
+										</div>
+									</div>
+									<img src={ImgProject5} alt='' className={styles['card-img']} />
+								</div>
+								<div className={styles.stack}>
+									<SiReact className={styles.icon} />
+									<SiCss3 className={styles.icon} />
+									<SiGit className={styles.icon} />
+								</div>
+							</div>
+							{/*  */}
+							<div className={styles.card}>
+								<div className={styles['card-top']}>
+									<div className={styles['card-back']}>
+										<div className={styles['project-bgc']}></div>
+										<p>Weather application</p>
+										<div className={styles['project-link']}>
+											<a href='https://github.com/stonka123/Weather-app' target='_blank' rel='noopener noreferrer'>
+												{' '}
+												Repository
+											</a>
+											<a href='https://stonka123.github.io/Weather-app/' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Live
 											</a>
@@ -69,11 +95,11 @@ const Projects = props => {
 										<div className={styles['project-bgc']}></div>
 										<p>Calculator spindle</p>
 										<div className={styles['project-link']}>
-											<a href='https://github.com/stonka123/App-cnc' target='_blank'>
+											<a href='https://github.com/stonka123/App-cnc' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Repository
 											</a>
-											<a href='https://stonka123.github.io/App-cnc/' target='_blank'>
+											<a href='https://stonka123.github.io/App-cnc/' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Live
 											</a>
@@ -94,11 +120,11 @@ const Projects = props => {
 										<div className={styles['project-bgc']}></div>
 										<p>Company management system</p>
 										<div className={styles['project-link']}>
-											<a href='https://github.com/stonka123/Sight-ERP' target='_blank'>
+											<a href='https://github.com/stonka123/Sight-ERP' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Repository
 											</a>
-											<a href='https://stonka123.github.io/Sight-ERP/' target='_blank'>
+											<a href='https://stonka123.github.io/Sight-ERP/' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Live
 											</a>
@@ -119,11 +145,11 @@ const Projects = props => {
 										<div className={styles['project-bgc']}></div>
 										<p>Portfolio page</p>
 										<div className={styles['project-link']}>
-											<a href='https://github.com/stonka123' target='_blank'>
+											<a href='https://github.com/stonka123' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Repository
 											</a>
-											<a href='https://tomasztwarowski.pl/' target='_blank'>
+											<a href='https://tomasztwarowski.pl/' target='_blank' rel='noopener noreferrer'>
 												{' '}
 												Live
 											</a>
@@ -133,6 +159,7 @@ const Projects = props => {
 								</div>
 								<div className={styles.stack}>
 									<SiReact className={styles.icon} />
+									<SiCss3 className={styles.icon} />
 									<SiAdobephotoshop className={styles.icon} />
 									<SiGit className={styles.icon} />
 								</div>
