@@ -5,6 +5,7 @@ import ImgProject2 from '../../assets/img/project2.jpg'
 import ImgProject3 from '../../assets/img/Signerp.jpg'
 import ImgProject4 from '../../assets/img/projekt4.jpg'
 import ImgProject5 from '../../assets/img/projekt5.jpg'
+import ImgProject6 from '../../assets/img/projekt6.jpg'
 import {
 	SiReact,
 	SiJavascript,
@@ -15,6 +16,8 @@ import {
 	SiTypescript,
 	SiSass,
 	SiAdobephotoshop,
+	SiFirebase,
+	SiNpm,
 } from 'react-icons/si'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
@@ -43,6 +46,33 @@ const Projects = props => {
 								<div className={styles['card-top']}>
 									<div className={styles['card-back']}>
 										<div className={styles['project-bgc']}></div>
+										<p>CheckFood - Culinary recipes </p>
+										<div className={styles['project-link']}>
+											<a href='https://github.com/stonka123/CheckFoood' target='_blank' rel='noopener noreferrer'>
+												{' '}
+												Repository
+											</a>
+											<a href='https://stonka123.github.io/CheckFoood/' target='_blank' rel='noopener noreferrer'>
+												{' '}
+												Live
+											</a>
+										</div>
+									</div>
+									<img src={ImgProject6} alt='' className={styles['card-img']} />
+								</div>
+								<div className={styles.stack}>
+									<SiReact className={styles.icon} />
+									<SiFirebase className={styles.icon} />
+									<SiNpm className={styles.icon} />
+									<SiCss3 className={styles.icon} />
+									<SiGit className={styles.icon} />
+								</div>
+							</div>
+							{/*  */}
+							<div className={styles.card}>
+								<div className={styles['card-top']}>
+									<div className={styles['card-back']}>
+										<div className={styles['project-bgc']}></div>
 										<p>Crypto Checker app</p>
 										<div className={styles['project-link']}>
 											<a href='https://github.com/stonka123/crypto-app' target='_blank' rel='noopener noreferrer'>
@@ -59,6 +89,7 @@ const Projects = props => {
 								</div>
 								<div className={styles.stack}>
 									<SiReact className={styles.icon} />
+									<SiNpm className={styles.icon} />
 									<SiCss3 className={styles.icon} />
 									<SiGit className={styles.icon} />
 								</div>

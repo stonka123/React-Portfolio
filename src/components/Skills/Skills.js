@@ -10,6 +10,8 @@ import {
 	SiCss3,
 	SiTypescript,
 	SiSass,
+	SiNpm,
+	SiFirebase,
 	SiAdobephotoshop,
 } from 'react-icons/si'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
@@ -62,6 +64,14 @@ const Skills = props => {
 						<div>
 							<SiJavascript className={styles['skill-icon']} />
 							<p>JavaScript</p>
+						</div>
+						<div>
+							<SiNpm className={styles['skill-icon']} />
+							<p>Npm</p>
+						</div>
+						<div>
+							<SiFirebase className={styles['skill-icon']} />
+							<p>Firebase DB</p>
 						</div>
 						<div>
 							<SiTypescript className={styles['skill-icon']} />
