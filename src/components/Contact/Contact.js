@@ -9,7 +9,7 @@ const Contact = () => {
 
 	function sendEmail(e) {
 		e.preventDefault()
-		emailjs.sendForm('service_u5w7xug', 'template_sgnaibo', form.current, 'tV1bz6wCHFR_rIWck').then(
+		emailjs.sendForm('service_y1kgg88', 'template_sgnaibo', form.current, 'tV1bz6wCHFR_rIWck').then(
 			result => {
 				console.log(result.text)
 				setStatus('Succes')
