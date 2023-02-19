@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.7a6631da.css",
+    "main.js": "/React-Portfolio/static/js/main.40c3d151.js",
+    "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/svg": "/React-Portfolio/static/media/229a57bbeef591e04a1fdfe347c90864.2ded83e6e7bbd9ad8970.svg",
+    "static/media/header_bgc_big.jpg": "/React-Portfolio/static/media/header_bgc_big.2a7bddc80a6df927422e.jpg",
+    "static/media/header_bgc_small.jpg": "/React-Portfolio/static/media/header_bgc_small.9b2619794addab6b5252.jpg",
+    "static/media/header_icon_photo.png": "/React-Portfolio/static/media/header_icon_photo.fac8bb06a5eb78c03026.png",
+    "static/media/email-img.png": "/React-Portfolio/static/media/email-img.d2e9964a9f310a7799b2.png",
+    "static/media/footer-logo.png": "/React-Portfolio/static/media/footer-logo.e44e213cfd5a63124f96.png",
+    "static/media/eot": "/React-Portfolio/static/media/229a57bbeef591e04a1fdfe347c90864.d750016026c116715f5a.eot",
+    "static/media/ttf": "/React-Portfolio/static/media/229a57bbeef591e04a1fdfe347c90864.b2bdf0ee70382dbce2a1.ttf",
+    "static/media/projekt6.jpg": "/React-Portfolio/static/media/projekt6.cc8be5aacab089527a9c.jpg",
+    "static/media/menu-bgc.jpg": "/React-Portfolio/static/media/menu-bgc.564724fed2099723a8a6.jpg",
+    "static/media/wheater-projects.jpg": "/React-Portfolio/static/media/wheater-projects.97bbb6a44c1c616c08cb.jpg",
+    "static/media/msg-logo.png": "/React-Portfolio/static/media/msg-logo.8f7b364dd852d58243cd.png",
+    "static/media/projekt4.jpg": "/React-Portfolio/static/media/projekt4.8f434bd1d69e9e3593fd.jpg",
+    "static/media/project2.jpg": "/React-Portfolio/static/media/project2.c6504bbd51d479caa5f9.jpg",
+    "static/media/astro-break.png": "/React-Portfolio/static/media/astro-break.e61bcd3183d1994c7b29.png",
+    "static/media/testtest.jpg": "/React-Portfolio/static/media/testtest.b0369504cafb621528c4.jpg",
+    "static/media/Signerp.jpg": "/React-Portfolio/static/media/Signerp.eff8b00ab81240b6a287.jpg",
+    "static/media/projekt5.jpg": "/React-Portfolio/static/media/projekt5.64fe5acf9831250314ce.jpg",
+    "static/media/logo-cosmos.png": "/React-Portfolio/static/media/logo-cosmos.f9822e21909e04bbd451.png",
+    "static/media/woff": "/React-Portfolio/static/media/229a57bbeef591e04a1fdfe347c90864.07474e4f14e060824cce.woff",
+    "static/media/woff2": "/React-Portfolio/static/media/229a57bbeef591e04a1fdfe347c90864.fa648ffe2d502bea68d0.woff2",
+    "static/media/revicons.eot": "/React-Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/React-Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/React-Portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/React-Portfolio/index.html",
+    "main.7a6631da.css.map": "/React-Portfolio/static/css/main.7a6631da.css.map",
+    "main.40c3d151.js.map": "/React-Portfolio/static/js/main.40c3d151.js.map",
+    "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a6631da.css",
+    "static/js/main.40c3d151.js"
+  ]
+}
